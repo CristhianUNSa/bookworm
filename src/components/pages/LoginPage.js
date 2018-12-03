@@ -8,7 +8,7 @@ class LoginPage extends React.Component {
   submit = data => {
     const { login: propLogin, history } = this.props;
 
-    return propLogin(data).then(() => history.push("/"));
+    return propLogin(data).then(() => history.push("/dashboard"));
   };
 
   render() {
